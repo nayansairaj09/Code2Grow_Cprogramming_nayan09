@@ -1,0 +1,88 @@
+# Day21_smart city traffic monitoring and violation detection system
+**Student Name:** Ch.Nayan sai raj 
+**Roll No:** AP25110090157  
+**Challenge:** Day 21 - smart city traffic monitoring and violation detection system 
+
+## Description
+This program acts like a simple traffic monotor.It record each vehicle speed and lane checks for overspeeding and wrong lane use,finds the busiest lanes and then 
+shows a clear report of all vehicles and violations.
+
+---
+
+## Build Commands
+### Linux/macOS:
+```bash
+mkdir -p build
+gcc -std=c11 -Wall -Wextra -O2 main.c -o build/program
+
+##output
+
+nayansairaj@Nayansairajs-MacBook-Air output % ./"day21_smart city traffic monitorring and violation detection system"
+Enter number of vehicles (max 30): 10
+
+--- Enter Vehicle Details ---
+
+Vehicle 1 ID (4-digit): 1403
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 2 ID (4-digit): 0305
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 3 ID (4-digit): 1412
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 4 ID (4-digit): 0000
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 5 ID (4-digit): 1000
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 6 ID (4-digit): 2000 
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 7 ID (4-digit): 3000
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 8 ID (4-digit): 4000
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 9 ID (4-digit): 5000
+Speed (km/h): 80
+Lane (1-4): 1
+
+Vehicle 10 ID (4-digit): 6001
+Speed (km/h): 80
+Lane (1-4): 1
+
+---------------- Vehicle Report Table ----------------
+VehID   Speed   Lane    SpeedViol       LaneViol
+1403    80      1          0               1
+305     80      1          0               0
+1412    80      1          0               1
+0       80      1          0               1
+1000    80      1          0               1
+2000    80      1          0               1
+3000    80      1          0               1
+4000    80      1          0               1
+5000    80      1          0               1
+6001    80      1          0               0
+
+=========== Traffic Summary ===========
+Total Vehicles Processed : 10
+Overspeeding Vehicles    : 0
+Highest Speed Recorded   : 80 km/h
+Lowest Speed Recorded    : 80 km/h
+Lane Violations          : 8
+Most Severe Violation By : Vehicle 1412
+Busiest Lane             : Lane 1
+Least Busy Lane          : Lane 2
+=======================================
+nayansairaj@Nayansairajs-MacBook-Air output %
